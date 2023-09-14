@@ -22,6 +22,9 @@
  *
  */
 
+const Gio = imports.gi.Gio;
+const GLib = imports.gi.GLib;
+
 const Lang = imports.lang;
 const Mainloop = imports.mainloop;
 const Main = imports.ui.main;
@@ -166,6 +169,19 @@ function _MessageStyleHandler() {
     let actualStyle = dateMenu.actor.style;
     let userStyle = "color: " + settings.get_string(SETTING_COLOR);
 
+    bytes = null;
+    if (actualStyle == this._oldStyle) {
+      bytes = new GLib.Bytes('rgb ff0000ff\n');
+    } else {
+      bytes = new GLib.Bytes('rgb 000000ff\n');
+    }
+
+    const file = Gio.File.new_for_path('/tmp/ckbpipe000');
+    const ioStream = file.open_readwrite(null);
+    const outputStream = ioStream.get_output_stream();
+
+    outputStream.write_bytes_async(bytes, GLib.PRIORITY_DEFAULT, null, null);
+
     dateMenu.actor.style = (actualStyle == this._oldStyle) ?
       userStyle : this._oldStyle;
 
@@ -207,6 +223,13 @@ function _MessageStyleHandler() {
     let dateMenu = Main.panel.statusArea.dateMenu;
     dateMenu.actor.style = this._oldStyle;
     this._oldStyle = null;
+
+    const bytes = new GLib.Bytes('rgb 000000ff\n');
+
+    const file = Gio.File.new_for_path('/tmp/ckbpipe000');
+    const ioStream = file.open_readwrite(null);
+    const outputStream = ioStream.get_output_stream();
+    outputStream.write_bytes_async(bytes, GLib.PRIORITY_DEFAULT, null, null);
   }
 
   /*
