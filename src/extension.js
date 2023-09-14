@@ -22,6 +22,9 @@
  *
  */
 
+const Gio = imports.gi.Gio;
+const GLib = imports.gi.GLib;
+
 const { Clutter, St } = imports.gi;
 const Mainloop = imports.mainloop;
 const Main = imports.ui.main;
@@ -180,6 +183,19 @@ function _MessageStyleHandler() {
 	userStyle += "background-color: " + settings.get_string(SETTING_BACKGROUNDCOLOR) + ";";
     }
 
+    bytes = null;
+    if (actualStyle == this._oldStyle) {
+      bytes = new GLib.Bytes('rgb ff0000ff\n');
+    } else {
+      bytes = new GLib.Bytes('rgb 000000ff\n');
+    }
+
+    const file = Gio.File.new_for_path('/tmp/ckbpipe000');
+    const ioStream = file.open_readwrite(null);
+    const outputStream = ioStream.get_output_stream();
+
+    outputStream.write_bytes_async(bytes, GLib.PRIORITY_DEFAULT, null, null);
+
     actor.style = (actor.style == this._oldStyle) ?  actualStyle.concat(userStyle) : this._oldStyle;
 
     // keep looping
@@ -223,6 +239,13 @@ function _MessageStyleHandler() {
     let actor = dateMenu instanceof Clutter.Actor ? dateMenu : dateMenu.actor;
     actor.style = this._oldStyle;
     this._oldStyle = null;
+
+    const bytes = new GLib.Bytes('rgb 000000ff\n');
+
+    const file = Gio.File.new_for_path('/tmp/ckbpipe000');
+    const ioStream = file.open_readwrite(null);
+    const outputStream = ioStream.get_output_stream();
+    outputStream.write_bytes_async(bytes, GLib.PRIORITY_DEFAULT, null, null);
   }
 
   /*
