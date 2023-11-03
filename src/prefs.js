@@ -24,7 +24,7 @@ const GObject = imports.gi.GObject;
 const Gio = imports.gi.Gio;
 const Gtk = imports.gi.Gtk;
 
-const Gettext = imports.gettext.domain('gnome-shell-notifications-alert');
+const Gettext = imports.gettext.domain('gnome-shell-notifications-alert-ckb');
 const _ = Gettext.gettext;
 
 const ExtensionUtils = imports.misc.extensionUtils;
@@ -290,7 +290,7 @@ const PrefsWidget = GObject.registerClass({
  */
 
 function init() {
-  ExtensionUtils.initTranslations('gnome-shell-notifications-alert');
+  ExtensionUtils.initTranslations('gnome-shell-notifications-alert-ckb');
 }
 
 function buildPrefsWidget() {

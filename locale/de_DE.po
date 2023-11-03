@@ -1,12 +1,12 @@
-# German translations for gnome-shell-notifications-alert package.
+# German translations for gnome-shell-notifications-alert-ckb-ckb package.
 # Copyright (C) 2013 Jonatan Zeidler
-# This file is distributed under the same license as the gnome-shell-notifications-alert package.
+# This file is distributed under the same license as the gnome-shell-notifications-alert-ckb package.
 # Jonatan Zeidler <jonatan_zeidler@gmx.de>, 2013.
 # Onno Giesmann <nutzer3105@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-shell-notifications-alert\n"
+"Project-Id-Version: gnome-shell-notifications-alert-ckb\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-25 10:34+0100\n"
 "PO-Revision-Date: 2019-12-29 21:14+0100\n"

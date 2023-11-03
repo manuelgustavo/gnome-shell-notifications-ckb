@@ -1,10 +1,10 @@
-UUID=notifications-alert-on-user-menu@hackedbellini.gmail.com
+UUID=manuel.gustavo@gnome-shell-notifications-ckb.manuelgustavo.github.com
 INSTALL_PATH=~/.local/share/gnome-shell/extensions/$(UUID)
 UPDATE_PATH=~/.local/share/gnome-shell/extension-updates/$(UUID)
 ZIP_PATH=$(UUID).zip
 SRC_PATH=src
 SCHEMAS_PATH=schemas
-LOCALE_DOMAIN=gnome-shell-notifications-alert
+LOCALE_DOMAIN=gnome-shell-notifications-alert-ckb
 LOCALE_PATH=locale
 LOCALES_TEMPLATE=${LOCALE_PATH}/messages.pot
 LOCALES=pt_BR de_DE cs_CZ nl_NL
