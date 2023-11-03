@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Thiago Bellini <hackedbellini@gmail.com>
+ * Copyright (C) 2023 Manuel Saraiva <manuel.gustavo@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -15,10 +15,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * Some parts of this code were forked from message-notifier:
- *   https://extensions.gnome.org/extension/150/message-notifier/
- * The idea of setting the menu red were inspired by pidgin-persistent-notification:
- *   https://extensions.gnome.org/extension/170/pidgin-peristent-notification
+ * Most parts of this code were forked from gnome-shell-notifications-alert:
+ *   https://github.com/bellini666/gnome-shell-notifications-alert
  *
  */
 

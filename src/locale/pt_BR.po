@@ -1,11 +1,11 @@
-# Brazilian Portuguese translations for gnome-shell-notifications-alert package.
-# Copyright (C) 2013 THE gnome-shell-notifications-alert's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-shell-notifications-alert package.
+# Brazilian Portuguese translations for gnome-shell-notifications-alert-ckb package.
+# Copyright (C) 2013 THE gnome-shell-notifications-alert-ckb's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-shell-notifications-alert-ckb package.
 # Thiago Bellini <hackedbellini@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-shell-notifications-alert\n"
+"Project-Id-Version: gnome-shell-notifications-alert-ckb\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-22 11:45-0300\n"
 "PO-Revision-Date: 2023-12-22 11:45-0300\n"

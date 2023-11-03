@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface domain="gnome-shell-notifications-alert">
+<interface domain="gnome-shell-notifications-alert-ckb">
   <object class="AdwPreferencesPage" id="notifications-alert_page_settings">
     <child>
       <object class="AdwPreferencesGroup">

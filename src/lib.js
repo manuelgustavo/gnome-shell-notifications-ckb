@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Thiago Bellini <hackedbellini@gmail.com>
+ * Copyright (C) 2023 Manuel Saraiva <manuel.gustavo@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public

@@ -1,7 +1,7 @@
-UUID=notifications-alert-on-user-menu@hackedbellini.gmail.com
+UUID=manuel.gustavo@gnome-shell-notifications-ckb.manuelgustavo.github.com
 ZIP_PATH=$(UUID).shell-extension.zip
 SRC_PATH=src
-LOCALE_DOMAIN=gnome-shell-notifications-alert
+LOCALE_DOMAIN=gnome-shell-notifications-alert-ckb
 LOCALE_DIR=locale
 LOCALE_PATH=$(SRC_PATH)/$(LOCALE_DIR)
 LOCALES_TEMPLATE=${LOCALE_PATH}/messages.pot

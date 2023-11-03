@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="gnome-shell-notifications-alert">
-  <schema path="/org/gnome/shell/extensions/notifications-alert/" id="org.gnome.shell.extensions.notifications-alert">
+<schemalist gettext-domain="gnome-shell-notifications-alert-ckb">
+  <schema path="/org/gnome/shell/extensions/notifications-alert-ckb/" id="org.gnome.shell.extensions.notifications-alert-ckb">
     <key name="force" type="b">
       <default>false</default>
       <summary>Alert even when 'Do Not Disturb' is enabled</summary>
