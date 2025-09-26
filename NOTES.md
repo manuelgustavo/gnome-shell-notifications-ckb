@@ -3,7 +3,7 @@
 ## cleaning and building it again
 
 ``` bash
-rm -f manuel.gustavo@gnome-shell-notifications-ckb.manuelgustavo.github.com.zip && rm -fr ~/.local/share/gnome-shell/extensions/manuel.gustavo@gnome-shell-notifications-ckb.manuelgustavo.github.com && make install
+rm -f manuel.gustavo@gnome-shell-notifications-ckb.manuelgustavo.github.com.shell-extension.zip && rm -fr ~/.local/share/gnome-shell/extensions/manuel.gustavo@gnome-shell-notifications-ckb.manuelgustavo.github.com && make install
 ```
 
 In a terminal, start `journalctl -f` to see potential logs / issues.

@@ -165,7 +165,7 @@ function _MessageStyleHandler() {
 
     const file = Gio.File.new_for_path('/tmp/ckbpipe000');
     if (file.query_exists(null)) {
-      bytes = null;
+      let bytes = null;
       if (actor.style == this._oldStyle) {
         bytes = new GLib.Bytes('rgb ff0000ff\n');
       } else {

@@ -1,5 +1,7 @@
 .vscode
 *~
 *.mo
+*.orig
 manuel.gustavo@gnome-shell-notifications-ckb.manuelgustavo.github.com.zip
+manuel.gustavo@gnome-shell-notifications-ckb.manuelgustavo.github.com.shell-extension.zip
 schemas/gschemas.compiled
